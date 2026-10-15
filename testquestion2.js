@@ -64,6 +64,11 @@ function gotHands(results){
 function draw () {
     image(video,0,0,640,400);
 
+    if (mouse.presses()) {
+        ball.collider = "dynamic";
+    }
+
+
     for(let i=0;i<hands.length;i++){
         let hand=hands[i]
         let keypoint=hand.keypoints[4];
@@ -73,6 +78,14 @@ function draw () {
         platform.x=width-hand.keypoints[4].x;
         platform.y=height-hand.keypoints[4].y;
     }
+    if (ball.collides(platform)) {
+        points = points + 1;
+    
 
+    // Display points at the top of the screen
+    fill("white");
+    textSize(24);
+    text("Points: " + points, 10, 30);
+    }
 
 }
