@@ -1,4 +1,4 @@
-
+//
 let handPose;
 let hands = [];
 let video;
