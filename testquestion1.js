@@ -64,6 +64,7 @@ function draw () {
     }
 
     if(hand[i.keypoint[4]]){
-        
+        platform.x=width-hand[i.keypoint[4]].x;
+        platform.y=height-hand[i.keypoint[4]].y;
     }
 }
