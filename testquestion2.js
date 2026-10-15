@@ -48,6 +48,10 @@ function setup () {
     platform=new Sprite(320,400,300,20);
     platform.collider="static";
     platform.color="yellow";
+
+
+
+    
 }
 
 function gotHands(results){
