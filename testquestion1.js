@@ -57,7 +57,7 @@ function draw () {
     image(video,0,0,640,400);
 
     for(let i=0;i<hands.length;i++){
-        let hands=hands[i]
+        let hand=hands[i]
         let keypoint=hands.keypoints[4];
         fingerTip.x=keypoint.x;
         fingerTip.y=keypoint.y;
