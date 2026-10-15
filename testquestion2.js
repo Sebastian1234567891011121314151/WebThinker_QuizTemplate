@@ -49,9 +49,12 @@ function setup () {
     platform.collider="static";
     platform.color="yellow";
 
+    ball = new Sprite(320, 100, 40);
+    ball.bounciness = 1;
+    ball.collider = "static";
+    ball.color = "red";
 
 
-    
 }
 
 function gotHands(results){
