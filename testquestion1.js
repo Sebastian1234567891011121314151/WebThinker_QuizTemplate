@@ -43,6 +43,9 @@ function setup () {
     fingerTip=new Sprite();
     fingerTip.diameter=30;
     fingerTip.color="white"
+
+    platform=new Sprite();
+    plat
 }
 
 function gotHands(results){
