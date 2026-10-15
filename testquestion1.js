@@ -44,8 +44,9 @@ function setup () {
     fingerTip.diameter=30;
     fingerTip.color="white"
 
-    platform=new Sprite(320,400,300,);
+    platform=new Sprite(320,400,300,20);
     platform.collider="static";
+    platform.color
 }
 
 function gotHands(results){
