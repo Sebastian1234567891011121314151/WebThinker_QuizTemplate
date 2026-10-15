@@ -59,12 +59,12 @@ function draw () {
     for(let i=0;i<hands.length;i++){
         let hands=hands[i]
         let keypoint=hands.keypoints[4];
-        fingerTip.x=keypoints.x;
-        fingerTip.y=keypoints.y;
+        fingerTip.x=keypoint.x;
+        fingerTip.y=keypoint.y;
     }
 
-    if(hand[i.keypoint[4]]){
-        platform.x=width-hand[i.keypoint[4]].x;
-        platform.y=height-hand[i.keypoint[4]].y;
+    if(hands[i].keypoints[4]){
+        platform.x=width-hands[i].keypoints[4].x;
+        platform.y=height-hands[i].keypoints[4].y;
     }
 }
