@@ -45,7 +45,7 @@ function setup () {
     fingerTip.color="white"
 
     platform=new Sprite();
-    plat
+    platform.collider="static";
 }
 
 function gotHands(results){
