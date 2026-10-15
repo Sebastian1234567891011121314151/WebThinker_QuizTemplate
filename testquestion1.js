@@ -62,4 +62,8 @@ function draw () {
         fingerTip.x=keypoint.x;
         fingerTip.y=keypoint.y;
     }
+
+    if(hand[i.keypoint[4]]){
+        
+    }
 }
